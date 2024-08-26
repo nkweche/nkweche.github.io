@@ -4,49 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="cssf/all.min.css">
+    <link rel="stylesheet" href="cssf/fontawesome.min.css">
 </head>
 <body>
+    <div class="" id="main">
     <header>
-        <div class="logo"><i class="fa-solid fa-hand-fist fa-flip-horizontal"></i><strong>Hyper.</strong></div>
        <div class="nav1">
         <nav>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li class="email"><a href="#"><i class="fa-light fa-envelope"></i>nkwechemecheal@gmail</a></li>
+                <li id="logo"><strong><i class="fa-solid fa-hand-fist fa-flip-horizontal"></i>Hyper.</strong></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
+                <li><a href="#blog"><i class="fa-solid fa-blog"></i>Blog</a></li>
+                <li><a href="#project"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact Me</a></li>
+                <li class="email"><a href="mailto:nkwechemecheal@gmail.com"><i class="fa-solid fa-envelope"></i>nkwechemecheal@gmail</a></li>
             </ul>   
         </nav>
        </div>
     </header>
 
-    <div class="intro">
-        
-        <h1 style="clear: right"><img src="img1.jpg" alt="mecheal">
-            I'm a creative <br>graphic & web <br>designer
+    <div class="intro" id="about">
+        <img src="img1.jpg" alt="mecheal">
+       <div class="myself">
+        <p> <strong>My Name Is Mecheal</strong></p>
+        <h1>
+            I Am A Creative <br>Graphic & Web <br>Designer
         </h1>
-        <p>
+        <p id="para">
             A product designer and visual developer in <em>nextinche</em>. I specialise in UI/UX
             <br>Dedign. Responsive Web Design. and Visual Development.
         </p>
-        <button class="btn">CONNECT WITH US</button>  
+        <button class="btn">CONNECT WITH ME</button>
+       </div>
+         
     </div>
 
     <div class="trusted">
         <ul>
-            <li class="hd">TRUSTED BY HIGH GROWTH STARTUPS AND INVESTORS</li>
-            <li>TraitzTech</li>
-            <li>Nextinch</li>
-            <li>Ikwen</li>
-            <li>Rinonk</li>
+            <li id="hd">TRUSTED BY HIGH GROWTH STARTUPS AND INVESTORS</li>
+            <li><i class="fa-solid fa-sort"></i>TraitzTech</li>
+            <li><i class="fa-solid fa-layer-group"></i>Nextinch</li>
+            <li><i class="fa-solid fa-shield-halved"></i>Ikwen</li>
+            <li><i class="fa-solid fa-bolt"></i>Rinonk</li>
         </ul>
     </div>
     
-    <div class="service">
-         <h1>Service I provide</h1>
+    <div class="service" id="blog">
+        <h1 id="sh1">Service I Provide</h1>
+        <div class="container"> 
+            <div class="cont" id="cont1"><h1><i class="fa-solid fa-umbrella"></i></h1><h3>Web Development</h3>
+                <p>As a Passionate web developer, I've refined and strengthened my skills in creating dynamic,
+                    user-friendly web applications.</p></div>
+            <div class="cont" id="cont2"><h1><i class="fa-solid fa-laptop"></i></h1><h3>Web Design</h3>
+                <p>As a versatile web designer, I've honed my skills in creating visually captivating, user-centric 
+                    digital experiences.</p></div>
+            <div class="cont" id="cont3"><h1><i class="fa-solid fa-mobile-screen"></i></h1><h3>App Design</h3>
+                <p>As a versatile app designer, I've honed my skills in crafting visually captivating, user-centric 
+                    mobile experiences.</p></div>
+            <div class="cont" id="cont4"><h1><i class="fa-solid fa-laptop-code"></i></h1><h3>Back-end Development</h3>
+                <p>As an experienced backend developer, I've honed my skills in creating scalable, high-performing server-side
+                    solutions that power dynamic web and mobile applications.</p></div>
+        </div>
     </div>
+
+    <div class="proj" id="project">
+        <div class="proj-hd">
+        <div><h1>Projects</h1></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam officiis
+             nobis voluptatibus labore dolor. <br> Lorem ipsum dolor sit amet.</p></div>
+             <nav>
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">App Design</a></li>
+                    <li><a href="#">Web Pages</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">App Developered</a></li>
+                </ul>
+             </nav>
+            </div>
+
+             <div class="row">
+                <div class="column">
+                <img src="img/img4.jpg" alt="IM4" style="width: 100%;">
+                <img src="img/img2.jpg" alt="IM2" style="width: 100%;">
+                <img src="img/img5.jpg" alt="IM5" style="width: 100%;">
+                </div>
+
+               <div class="column">
+                <img src="img/img1.jpg" alt="IM1" style="width: 100%;" height="48.5%">
+                <img src="img/img3.jpg" alt="IM3" style="width: 100%;" height="48.5%">
+               </div>
+
+               <div class="column">
+                <img src="img/img6.jpg" alt="IM6" style="width: 100%;">
+                <img src="img/img7.jpg" alt="IM7" style="width: 100%;">
+                <img src="img/img8.jpg" alt="IM8" style="width: 100%;">
+            </div>
+             </div>
+    </div>
+
+    <form action="#" target="_blank" method="get" id="contact">
+        <h1>Contact Me</h1>
+        <strong>Name *</strong>
+            <label for="firstname"></label>
+                 <input type="text"  placeholder="Enter Your Name Here">
+                 <strong>Email *</strong>
+                    <label for="email"></label>
+                         <input type="email"  placeholder="Enter Your Email Here">
+                         <div>
+                            <strong>Message</strong><br>
+                            <textarea name="Message" id="message" rows="15" cols="100"></textarea>
+                            <br><input type="submit" value="Submit">
+                        </div>
+    </form>
+    
+</div>
+<div>
+    <footer class="container-fluid" id="footer">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user"></i>About Me</a></li>
+            <li><a href="#"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+            <li><a href="#"><i class="fa-solid fa-blog"></i>Blog</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social">
+            <p>&copy; 2024 Hyper. All rights reserved.</p>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+   </div>
 </body>
 </html>

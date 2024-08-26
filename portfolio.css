@@ -1,45 +1,54 @@
+#main{
+    margin: 20px 60px;
+    padding: 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*style for the header section*/
 header {
     display: flex;
     justify-content: flex-start;
-    margin: 20px 60px;
 }
-
-.nav1 ul{
+.fixed{
+    position: fixed;
+}
+header nav ul{
     display: flex;
     justify-content: space-between;
+    margin-left: 130px;
 }
-.nav1 li a{
+header nav li a{
     text-decoration: none;
     margin: 10px;
     padding: 0px;
     color: gray;
 }
 
-.nav1 li a:hover{
+header nav li a:hover{
     color: rgb(90, 50, 249);
 }
 
 
-.nav1 li{
-    list-style: none; 
+header nav li{
+    list-style: none;
 }
-.logo{
-    font-size:xx-large ;
+#logo{
+    font-size:xx-large;
+    position: absolute;
+    top: 15px;
+    left: 89px;
 }
 .email{
     position: absolute;
     right: 0px;
-    margin-right: 60px;
+    margin-right: 80px;
 }
 
 /*style for the introduction section*/
 .intro{
-    margin: 20px 60px;
     overflow: auto;
     /* border: 1px solid; */
 }
-
 
 .intro h1{
     font-size: 70px;
@@ -48,57 +57,167 @@ header {
 .intro .btn{
     background-color: rgb(90, 50, 249);
     color: white;
-    border-radius: 20px;
-    padding: 10px 15px;
+    border-radius: 40px;
+    padding: 20px 50px;
+    font-size: medium;
 }
 
 .intro .btn:hover{
     background-color: rgb(75, 35, 239);
+    color: white;
 }
 
 .intro img{
     width: 700px;
-    height: 500px;
+    height: 600px;
     float: right;
 }
-
-/*style for the trusted section*/
-
-.trusted{
-    margin: 20px 60px;
-    padding: 10px;
-
+.myself{
+    margin-top: 50px;   
 }
+.myself h1{
+    line-height: 60px;
+}
+#para{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+/*style for the trusted section*/
 
 .trusted ul{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(247, 246, 249);
+    padding: 20px;
 }
 
 .trusted ul li{
     list-style: none;
-    width: 200px;
-    height: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    margin: 10px;
     font-style: unset;
     font-size: 20px;
     color: gray;
-    padding: 10px;
+    
 }
 
-.trusted .hd{
+#hd{
     font-size: 14px;
     font-style: initial;
     color: black;
-    word-wrap: break-word; 
+    line-height: 15px;
+    word-wrap: break-word;   
 }
 
-.trusted ul li:hover{
+/* .trusted ul li:hover{
     background-color: rgb(232, 232, 232);
-}
+} */
 
 /*style for the services section*/
 
-.service h1{
+#sh1{
     font-size: 70px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.cont{
+    padding: 20px;
+}
+/* #cont1, #cont2,#cont3,#cont4{
+    background-color: aliceblue;
+} */
+#cont1{
+    background-color: #eedbff;
+}
+#cont2{
+    background-color:#d9b9ff;
+}
+#cont3{
+    background-color: #876aac;
+}
+#cont4{
+    background-color: #a283c8;
+}
+
+/* projects section */
+
+.proj{
+    margin-top: 50px;
+}
+.proj h1{
+    font-size: 70px; 
+}
+.proj-hd{
+    text-align: center;
+}
+.proj nav ul{
+    display: inline-flex;
+}
+.proj li{
+    list-style: none;
+    margin: 0 30px;
+}
+.proj li a:hover{
+    color: rgb(75, 35, 239);
+
+}
+.proj a{
+    text-decoration: none;
+    color: gray;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.column{
+    flex: 25%;
+    max-width: 100%;
+    padding: 0px 10px;
+}
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* contact-me section */
+form{
+    align-content: center;
+}
+
+/* footer section */
+#footer{
+    margin-top: 50px;
+    background-color: #3e2260;
+    color: gray;
+}
+#footer nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+#footer nav li a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    color: gray;
+    
+}
+
+#footer nav li a:hover{
+    color: rgb(90, 50, 249);
+}
+
+
+#footer nav li{
+    list-style: none;
+    padding: 15px;
 }
