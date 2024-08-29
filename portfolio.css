@@ -5,31 +5,31 @@
 }
 
 /*style for the header section*/
-header {
+.menu {
     display: flex;
     justify-content: flex-start;
 }
 .fixed{
     position: fixed;
 }
-header nav ul{
+.menu ul{
     display: flex;
     justify-content: space-between;
     margin-left: 130px;
 }
-header nav li a{
+.menu a{
     text-decoration: none;
     margin: 10px;
     padding: 0px;
     color: gray;
 }
 
-header nav li a:hover{
+.menu a:hover{
     color: rgb(90, 50, 249);
 }
 
 
-header nav li{
+.menu li{
     list-style: none;
 }
 #logo{
@@ -42,6 +42,10 @@ header nav li{
     position: absolute;
     right: 0px;
     margin-right: 80px;
+}
+#name{
+    font-size: 30px;
+    color:  #876aac;
 }
 
 /*style for the introduction section*/
@@ -156,14 +160,14 @@ header nav li{
 .proj-hd{
     text-align: center;
 }
-.proj nav ul{
+.proj ul{
     display: inline-flex;
 }
 .proj li{
     list-style: none;
     margin: 0 30px;
 }
-.proj li a:hover{
+.proj a:hover{
     color: rgb(75, 35, 239);
 
 }
@@ -189,22 +193,22 @@ header nav li{
 }
 
 /* contact-me section */
-form{
-    align-content: center;
-}
-
+ #contact {
+    display: flex;
+    justify-content: center;
+ }
 /* footer section */
 #footer{
     margin-top: 50px;
     background-color: #3e2260;
     color: gray;
 }
-#footer nav ul{
+#footer ul{
     display: flex;
     justify-content: center;
 
 }
-#footer nav li a{
+#footer a{
     text-decoration: none;
     margin: 5px;
     padding: 5px;
@@ -212,12 +216,26 @@ form{
     
 }
 
-#footer nav li a:hover{
+#footer a:hover{
     color: rgb(90, 50, 249);
 }
 
 
-#footer nav li{
+#footer li{
     list-style: none;
     padding: 15px;
 }
+
+/* @media screen and (max-width: 800px) {
+    .main {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .nav1 a {
+      float: none;
+      width: 100%;
+    }
+  } */
